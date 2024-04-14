@@ -30,10 +30,12 @@ a:active {
 
 /* LINK BACKGROUND */
 
-/* Comment 
-
-3 line
-4 line
+/*  
+    Commenting example 
+    2 line comment
+    3 line
+    4 line
+    etc...
 */
 
 /* Just by class */
@@ -42,7 +44,7 @@ a:active {
 }
 
 .background-other {
-    background-color: lightgreen; /* In line comment */
+    background-color: /* Inside line comment */ lightgreen;
 }
 
 /* OR full declaration */
@@ -90,6 +92,8 @@ ul.b {
 ul.c {
     list-style-type: decimal-leading-zero;
 }
+
+/* Image as a item list marker */
 
 ul.image {
     list-style-image: url('../img/gear.jpg');
