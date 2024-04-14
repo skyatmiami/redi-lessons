@@ -1,0 +1,96 @@
+/* LINK STATES */
+/* unvisited */
+a {
+    font-size: 35px;
+}
+
+a:link {
+    color: red;
+}
+
+/* visited */
+a:visited {
+    color: green;
+}
+
+/* mouse over */
+a:hover {
+    color: black;
+}
+
+/* selected */
+a:active {
+    color: blue;
+}
+
+/* Link styling combination */
+/* a:link, a:visited, a:hover, a:active {
+    background-color: grey;
+} */
+
+/* LINK BACKGROUND */
+
+/* Comment 
+
+3 line
+4 line
+*/
+
+/* Just by class */
+.background {
+    background-color: red; /* In line comment */
+}
+
+.background-other {
+    background-color: lightgreen; /* In line comment */
+}
+
+/* OR full declaration */
+a.background:link {
+    background-color: red;
+}
+
+a.new2:link {
+    background-color: yellow;
+}
+
+a.new2:visited {
+    background-color: white;
+}
+
+a.background:visited {
+    background-color: red;
+}
+
+a.background:hover {
+    background-color: yellow;
+}
+
+a.background:active {
+    background-color: red;
+}
+
+/* BUTTON LINK */
+a.button {
+    text-decoration: none;
+    background-color: blueviolet;
+    color: white;
+    padding: 14px;
+}
+
+/* LISTS */
+ul.a {
+    list-style-type: none;
+}
+
+ul.b {
+    list-style-type: lower-latin;
+}
+
+ul.c {
+    list-style-type: decimal-leading-zero;
+}
+
+ul.image {
+    list-style-image: url('../img/gear.jpg');
+}

@@ -1,0 +1,101 @@
+div p {
+    background-color: aqua;
+}
+
+span ul li {
+    background-color: lightgreen;
+}
+
+/* We can comment our CSS file */
+
+/*
+    Also we can make
+    multiple line comments
+*/
+
+.nonexistent {
+    width: 90%; /* comment in the end of the line */
+}
+
+.nonexistent {
+    border: 1px /* comment inside line */ solid grey;
+}
+
+.basic-colors {
+    background-color: LightCyan;
+    background-color: #E0FFFF; /* HEX format */
+    background-color: rgb(224, 255, 255); /* RGB format */
+    color: brown;
+    border-style: solid;
+    border-color: blue;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    border: 1px solid black;
+    width: 100px;
+    text-align: justify;
+}
+
+.text-direction-rtl {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.vertical-align-baseline img {
+    background: black;
+    width: 10px;
+    height: 10px;
+    vertical-align: baseline;
+}
+
+.vertical-align-top img {
+    background: black;
+    width: 10px;
+    height: 10px;
+    vertical-align: text-top;
+}
+
+.vertical-align-bottom img {
+    background: black;
+    width: 10px;
+    height: 10px;
+    vertical-align: text-bottom;
+}
+
+.vertical-align-sub img {
+    background: black;
+    width: 10px;
+    height: 10px;
+    vertical-align: sub;
+}
+
+.vertical-align-super img {
+    background: black;
+    width: 10px;
+    height: 10px;
+    vertical-align: super;
+}
+
+.shadow {
+    text-shadow: 1px /* horizontal shadow */ 3px /* vertical shadow */;
+}
+
+.shadow-color {
+    text-shadow: 1px 3px green;
+}
+
+.shadow-color-blur {
+    text-shadow: 1px 3px 4px green;
+}
