@@ -92,5 +92,5 @@ ul.c {
 }
 
 ul.image {
-    list-style-image: url('../img/gear.jpg');
+    list-style-image: url('/img/gear.jpg');
 }
