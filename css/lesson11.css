@@ -1,0 +1,64 @@
+/* 1. INTRODUCTION TO CSS BOX MODEL */
+.box-model {
+    background: blue;
+    color: aliceblue;
+    font-size: 25px;
+    width: 50%;
+    height: 50px;
+    padding: 10px;
+    border: 12px solid black;
+    margin: 30px;
+}
+
+/* 2. STANDARD BOX MODEL */
+
+.box-model-standard {
+    font-size: 30px;
+    width: 60%;
+    height: 60px;
+    /* background: green;       */
+    /* padding: 15px;           */
+    /* border: 25px solid aqua; */
+    /* margin: 40px;            */
+}
+
+/* 3. PADDING, MARGIN, BORDER */
+
+.box-model-padding {
+    font-size: 40px;
+    width: 60%;
+    height: 60px;
+    background: yellow;
+    border: 25px solid aqua;
+    padding-top: 15px;
+    padding-right: 20px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    /* padding: 15px 20px 25px 30px; */ /* - Padding Shorthand Property */
+}
+
+.box-model-margin {
+    font-size: 30px;
+    width: 80%;
+    height: 83px;
+    background: peachpuff;
+    border: 15px solid blue;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+    margin-left: -30px;
+    /* margin: 15px 20px 25px 30px; */ /* - Margin Shorthand Property */
+    /* margin: auto; */ /* - to horizontally center the element */
+}
+
+/* RADIUS BORDER */
+.box-model-radius {
+    font-size: 40px;
+    width: 80%;
+    height: 83px;
+    background: darkkhaki;
+    border: 10px solid brown;
+    border-radius: 30px;
+    margin: 15px;
+    padding: 15px;
+}

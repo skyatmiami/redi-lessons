@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lesson10.css">
+
+    <title>Lesson 10 - CSS Units</title>
+</head>
+<body>
+    <h2>1. Introduction to CSS Units, <span class="text-marked">font-size</span></h2>
+
+    <h3>Absolute (fixed) units</h3>
+
+    <p>Objects for which we specify absolute (or also fixed)
+       values <br>
+       will have <b>exactly</b> the value that we specify.</p>
+
+    <ul>
+        <li class="cm">cm - centimeters</li>
+        <li class="mm">mm - millimeters</li>
+        <li class="in">in - inches</li>
+        <li class="px">px - pixels</li>
+        <li class="pt">pt - points</li>
+        <li class="pc">pc - picas</li>
+    </ul>
+
+    <hr>
+
+    <h3>Relative units</h3>
+
+    <p>Relative values are useful when we want our objects
+       to change their size when <b>conditions change</b><br>
+       (for example, viewing a site on devices with 
+       <b>different screen sizes</b> - laptop, phone, tablet).</p>
+
+    <ul>
+        <li class="em">em</li>
+        <li class="ex">ex</li>
+        <li class="ch">ch</li>
+        <li class="rem">rem</li>
+        <li class="vw">vw - relative to 1% of the 
+        width of the browser window size</li>
+        <li class="vh">vh</li>
+        <li class="vmin">vmin - relative to 1% of the 
+        browser's windows smaller dimension</li>
+        <li class="vmax">vmax</li>
+        <li class="percent">%</li>
+    </ul>
+
+    <h2>2. Height & Width (of an element)</h2>
+
+    <div class="absolute">Absolute (fixed) size block</div><br>
+
+    <div class="relative">Relative size block</div>
+
+    <h2>3. CSS Max-Width</h2>
+
+    <p>Using CSS max-width property<br>
+       we can describe the <b>maximum</b> width of an element.</p>
+
+    <p class="max-width"><span class="text-marked">max-width</span> Paragraph <br><br>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget
+        blandit nulla. Maecenas dignissim, urna pretium ullamcorper semper, 
+        ligula lorem venenatis enim, sit amet tincidunt leo libero vitae nibh.
+        Aliquam tristique interdum sapien, a suscipit elit consectetur et. Cras
+        tellus massa, vestibulum id leo in, porta vehicula enim. Curabitur est 
+        nulla, blandit sed odio ac, fermentum luctus nisl.</p>
+</body>
+</html>

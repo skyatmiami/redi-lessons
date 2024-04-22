@@ -1,0 +1,88 @@
+/* ABSOLUTE (FIXED) UNITS */
+li.cm {
+    font-size: 1.5cm;
+}
+
+li.mm {
+    font-size: 8mm;
+}
+
+li.in {
+    font-size: 0.5in;
+}
+
+li.px {
+    font-size: 25px;
+}
+
+li.pt {
+    font-size: 30pt;
+}
+
+li.pc {
+    font-size: 4.5pc;
+}
+
+/* RELATIVE UNITS */
+li.em {
+    font-size: 1.5em;
+}
+
+li.ex {
+    font-size: 8ex;
+}
+
+li.ch {
+    font-size: 3.5ch;
+}
+
+li.rem {
+    font-size: 4rem;
+}
+
+li.vw {
+    font-size: 5vw;
+}
+
+li.vh {
+    font-size: 9vh;
+}
+
+li.vmin {
+    font-size: 3vmin;
+}
+
+li.vmax {
+    font-size: 9vmax;
+}
+
+li.percent {
+    font-size: 95%;
+}
+
+
+/* 2. HEIGHT & WIDTH */
+div.absolute {
+    height: 200px;
+    width: 7cm;
+    background: green;
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+}
+
+div.relative {
+    height: auto; /* automatically sets an element's height based on its content */
+    width: 60vw;
+    background: gray;
+    color: white;
+    font-size: 5vw;
+    padding: 4%;
+}
+
+/* 3. CSS MAX-WIDTH */
+p.max-width {
+    max-width: 300px;
+    padding: 5px;
+    border: 2px solid black;
+}

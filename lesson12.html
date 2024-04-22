@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lesson12.css">
+
+    <title>Lesson 12 - CSS Layout - Part I</title>
+</head>
+<body>
+    <h2>1. Normal Flow</h2>
+
+    <p><b>Normal Flow</b> -<br>
+    is the way that <u>block</u> and <u>inline</u> elements 
+    are displayed on a page (by <b>default</b>) before any 
+    changes are made to their layout.</p>
+    
+    <p>The flow is essentially a set of things that are 
+    all working <b>together</b> and know about each other 
+    in our layout. </p>
+
+    <p>Once something is taken out of flow it works 
+    <b><u>INDEPENDENTLY</u></b>.</p>
+
+    <hr>
+
+    <h3>Example DIV 1</h3>
+    <div class="block">
+        <p>This is the TEST text in paragraph. <span class="text-marked">This 
+        is the SPAN <b>inline</b> element</span>. This is a continuation of the 
+        demo text in <b>div block</b>.</p>
+    </div>
+
+    <p>In normal flow, inline elements display in the <b>INLINE</b> direction. <br>
+    Block elements display one after the other. <br>
+    Inline elements display one after the other, starting on the left, <br>
+    and BLOCK elements start at the <b>top and move down</b> the page.</p>
+    
+    <h3>Example DIV 2</h3>
+    <div class="block-2">
+        <p>This is the another TEST text in another paragraph. <span class="text-marked">This 
+        is the SPAN 2 <b>inline</b> element</span>. This is a continuation of the 
+        demo text in <b>div 2 block</b>.</p>
+
+        <p>This block element stars after the top <u>DIV 1</u> and move <b>down</b> 
+        the page.</p>
+    </div>
+    <br>
+
+    <h2>2. The display Property</h2>
+
+    <h3>Objects are positioned one after another in the line:</h3>
+    <span class="display-inline">SPAN 1 with property
+        <span class="text-marked">display: inline;</span>
+    </span>
+    <span class="display-inline">SPAN 2 with property
+        <span class="text-marked">display: inline;</span>
+    </span>
+
+    <br><br><hr><br>
+
+    <h3>Objects are positioned from top and moving 
+        down one behind another:</h3>
+    <span class="display-block">SPAN 1 with property
+        <span class="text-marked">display: block;</span>
+    </span>
+    <span class="display-block">SPAN 2 with property
+        <span class="text-marked">display: block;</span>
+    </span>
+
+    <br><hr><br>
+
+    <h3>Objects which behave like blocks are positioned 
+        one after another in the line:</h3>
+    <span class="display-inline-block">SPAN 1 with property
+        <span class="text-marked">display: inline-block;</span>
+    </span>
+    <span class="display-inline-block">SPAN 2 with property
+        <span class="text-marked">display: inline-block;</span>
+    </span>
+    <br><br>
+
+    <h2>3. Floats</h2>
+
+    <h3>Image and text <u>WITHOUT SETTING FLOAT VALUE</u>
+        (we have the situation, when web page layout 
+        looks not so good because of image and text 
+        related positioning):
+    </h3>
+    
+    <p><img src="img/flower.jpg" alt="Flower" title="Flower float: no value">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Phasellus imperdiet, nulla et dictum interdum, nisi lorem 
+    egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+    Maecenas nisl est, ultrices nec congue eget, auctor vitae 
+    massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante 
+    ligula, facilisis sed ornare eu, lobortis in odio. Praesent 
+    convallis urna a lacus interdum ut hendrerit risus congue. 
+    Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+    ac. In at libero sed nunc venenatis imperdiet sed ornare 
+    turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+    fringilla congue eros non fermentum. Sed dapibus pulvinar 
+    nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    <hr><br>
+
+    <h3>Image is positioned on the left side of a page
+        (text wraps around image and creates comfort 
+        reading):</h3>
+    
+    <p><img src="img/flower.jpg" alt="Flower" title="Flower float: left" class="float-left">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Phasellus imperdiet, nulla et dictum interdum, nisi lorem 
+    egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+    Maecenas nisl est, ultrices nec congue eget, auctor vitae 
+    massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante 
+    ligula, facilisis sed ornare eu, lobortis in odio. Praesent 
+    convallis urna a lacus interdum ut hendrerit risus congue. 
+    Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+    ac. In at libero sed nunc venenatis imperdiet sed ornare 
+    turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+    fringilla congue eros non fermentum. Sed dapibus pulvinar 
+    nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    <hr><br>
+
+    <h3>Image is positioned on the right side of a page
+        (in this case, we can make focus on the text):</h3>
+
+    <p><img src="img/flower.jpg" alt="Flower" title="Flower float: right" class="float-right">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+    Phasellus imperdiet, nulla et dictum interdum, nisi lorem 
+    egestas odio, vitae scelerisque enim ligula venenatis dolor. 
+    Maecenas nisl est, ultrices nec congue eget, auctor vitae 
+    massa. Fusce luctus vestibulum augue ut aliquet. Mauris ante 
+    ligula, facilisis sed ornare eu, lobortis in odio. Praesent 
+    convallis urna a lacus interdum ut hendrerit risus congue. 
+    Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim 
+    ac. In at libero sed nunc venenatis imperdiet sed ornare 
+    turpis. Donec vitae dui eget tellus gravida venenatis. Integer 
+    fringilla congue eros non fermentum. Sed dapibus pulvinar 
+    nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
+    <hr><br>
+
+    <h3>Clearing floats values</h3>
+
+    <h4>Web site design example (clearing floats DEMO):</h4>
+
+    <nav>
+        Web Site Navigation (float: left)
+        <ul>
+            <li>Home</li>
+            <li>About Me</li>
+            <li>Work experience</li>
+            <li>My education</li>
+            <li>Hobbies</li>
+            <li>Travelling</li>
+            <li>Contact Form</li>
+        </ul>
+    </nav>
+    <section>
+        Main content of the page (float: right)
+        <p>Pictures, some interesting info and etc...</p>
+    </section>
+    <footer>
+        Page footer (without using floats clearing 
+        for this web site block).<br>
+        Please, test clearing values in CSS file:
+        <b>none</b> | <b>right</b> | <b>left</b> | <b>both</b>
+    </footer>
+
+    <h2 class="home-practice">Home practice</h2>
+
+    <ul>
+       <li>please, use the Lesson 12 <b>examples</b> to build your Web Site</li>
+       <li>practice in applying inline and block elements <b>positioning</b></li>
+       <li>repeat on your pages Lesson 12 code examples with desired <b>modifications</b> (display, float, radius, clear and etc).</li>
+    </ul>
+</body>
+</html>

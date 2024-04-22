@@ -1,0 +1,78 @@
+/* 1. NORMAL FLOW */
+div.block {
+    border: 5px solid brown;
+    padding: 10px;
+}
+
+div.block-2 {
+    border: 10px solid darkblue;
+    width: 50%;
+    padding: 15px;
+}
+
+/* 2. THE DISPLAY PROPERTY */
+span.display-inline {
+    display: inline;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid green;
+    padding: 6px;
+}
+
+span.display-block {
+    display: block;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid green;
+    padding: 6px;
+}
+
+span.display-inline-block {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    border: 1px solid green;
+    padding: 6px;
+}
+
+/* 3. FLOATS */
+img.float-left {
+    float: left;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+img.float-right {
+    float: right;
+    margin: 10px;
+    border-radius: 25px;
+}
+
+/* CLEARING FLOATS */
+nav {
+    background: lightgray;
+    width: 30%;
+    float: left;
+}
+
+section {
+    background: lightgreen;
+    width: 70%;
+    float: right;
+}
+
+footer {
+    background: lightblue;
+    /* clear: none; */ /* - Default situation */
+    /* clear: right; */
+    /* clear: left; */
+    /* clear: both; */
+}
+
+h2.home-practice {
+    clear: left;
+    margin-top: 140px;
+}

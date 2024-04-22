@@ -6,3 +6,9 @@
 body {
     font-family: Open Sans;
 }
+
+span.text-marked {
+    padding: 3px 6px;
+    background: blueviolet;
+    color: white;
+}
