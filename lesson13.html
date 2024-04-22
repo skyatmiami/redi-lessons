@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lesson13.css">
+
+    <title>Lesson 13 - CSS Layout - Part II - FlexBox</title>
+</head>
+<body>
+    <h2>1. Introduction to Flexbox</h2>
+
+    <p>Floats design <b>PROBLEMS</b></p>
+
+    <p><b>FLEXIBLE</b> BOXES</p>
+
+    <h3>display: flex;</h3>
+    <nav>
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h3>flex-direction: column; (default - row)</h3>
+    <nav class="column">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h3>flex-wrap: wrap; (objects will wrap if necessary,
+        default - nowrap)</h3>
+    <nav class="wrap">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work 1</div>
+        <div>Work 2</div>
+        <div>Work 3</div>
+        <div>Work 4</div>
+        <div>Work 5</div>
+        <div>Study 1</div>
+        <div>Study 2</div>
+        <div>Study 3</div>
+        <div>Study 4</div>
+        <div>Study 5</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h3>flex-flow: row wrap; (flex-flow is a shorthand 
+    property for setting both the flex-direction and 
+    flex-wrap properties)</h3>
+    <nav class="row-wrap">
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+        <div>TEST TEXT</div>
+    </nav>
+
+    <h3>justify-content: center;</h3>
+    <nav class="justify-center">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h3>justify-content: flex-end; (default - flex-start)</h3>
+    <nav class="justify-flex-end">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h2>2. The Flex Model</h2>
+
+</body>
+</html>

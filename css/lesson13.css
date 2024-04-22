@@ -1,0 +1,34 @@
+nav {
+    display: flex;
+    background: gray;
+}
+
+nav > div {
+    background: lightblue;
+    padding: 7px;
+    margin: 7px;
+    text-align: center;
+}
+
+nav.column {
+    flex-direction: column; /* Default - row */
+}
+
+nav.wrap {
+    flex-wrap: wrap; /* Default - nowrap */
+}
+
+nav.row-wrap {
+    flex-flow: row wrap;
+}
+nav.row-wrap > div {
+    height: 60px;
+}
+
+nav.justify-center {
+    justify-content: center;
+}
+
+nav.justify-flex-end {
+    justify-content: flex-end;
+}
