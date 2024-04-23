@@ -22,8 +22,8 @@ span.display-inline {
 
 span.display-block {
     display: block;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: aqua;
     border: 1px solid green;
     padding: 6px;
@@ -31,11 +31,12 @@ span.display-block {
 
 span.display-inline-block {
     display: inline-block;
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     background-color: aqua;
     border: 1px solid green;
     padding: 6px;
+    margin: 0;
 }
 
 /* 3. FLOATS */

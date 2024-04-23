@@ -51,7 +51,15 @@
 
     <h2>2. The display Property</h2>
 
-    <h3>Objects are positioned one after another in the line:</h3>
+    <p>The display property allows us to place 
+    some web page elements in the <b>position</b> we need. <br>
+    Also, we can define their <b>behavior</b>.</p>
+
+    <p>A, B, C examples demonstartes how one and the same 
+    SPAN element can be showed on the page <b>depending</b>
+    on <b>DISPLAY</b> value:</p>
+
+    <h3>A) Objects are positioned one after another in the line:</h3>
     <span class="display-inline">SPAN 1 with property
         <span class="text-marked">display: inline;</span>
     </span>
@@ -61,30 +69,42 @@
 
     <br><br><hr><br>
 
-    <h3>Objects are positioned from top and moving 
+    <h3>B) Objects are positioned from top and moving 
         down one behind another:</h3>
-    <span class="display-block">SPAN 1 with property
+    <span class="display-block">SPAN 3 with property <br>
         <span class="text-marked">display: block;</span>
     </span>
-    <span class="display-block">SPAN 2 with property
+    <span class="display-block">SPAN 4 with property <br>
         <span class="text-marked">display: block;</span>
     </span>
 
     <br><hr><br>
 
-    <h3>Objects which behave like blocks are positioned 
+    <h3>C) Objects which behave like blocks are positioned 
         one after another in the line:</h3>
-    <span class="display-inline-block">SPAN 1 with property
+    <span class="display-inline-block">SPAN 5 with property
         <span class="text-marked">display: inline-block;</span>
-    </span>
-    <span class="display-inline-block">SPAN 2 with property
+    </span><span class="display-inline-block">SPAN 6 with property
         <span class="text-marked">display: inline-block;</span>
     </span>
     <br><br>
 
     <h2>3. Floats</h2>
 
-    <h3>Image and text <u>WITHOUT SETTING FLOAT VALUE</u>
+    <p>The float property specifies <b>how</b> an element 
+    should float on the page. <br>
+    The floated element will be <b>REMOVED</b> from the 
+    normal flow of the page, but will remain part of the 
+    flow. <br>
+    In this case, we get the opportunity to <b>MOVE</b> 
+    the element left or right until it touches the borders 
+    of its container or another site markup element.</p>
+
+    <p>D, E, F examples demonstartes how one and the same 
+        IMG element can be showed on the page <b>depending</b>
+        on <b>FLOAT</b> value:</p>
+
+    <h3>D) Image and text <u>WITHOUT SETTING FLOAT VALUE</u>
         (we have the situation, when web page layout 
         looks not so good because of image and text 
         related positioning):
@@ -105,7 +125,7 @@
     nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
     <hr><br>
 
-    <h3>Image is positioned on the left side of a page
+    <h3>E) Image is positioned on the left side of a page
         (text wraps around image and creates comfort 
         reading):</h3>
     
@@ -124,7 +144,7 @@
     nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
     <hr><br>
 
-    <h3>Image is positioned on the right side of a page
+    <h3>F) Image is positioned on the right side of a page
         (in this case, we can make focus on the text):</h3>
 
     <p><img src="img/flower.jpg" alt="Flower" title="Flower float: right" class="float-right">
@@ -142,7 +162,14 @@
     nibh tempor porta. Cras ac leo purus. Mauris quis diam velit.</p>
     <hr><br>
 
-    <h3>Clearing floats values</h3>
+    <h3>CLEARING floats values</h3>
+
+    <p>If the <b>FLOAT</b> property is not cleared in time and in the 
+    right place, the expected design construction may be destroyed. <br>
+    We clear the float property to <b>control</b> floating 
+    elements, preventing elements from overlapping or bumping 
+    into each other. 
+    </p>
 
     <h4>Web site design example (clearing floats DEMO):</h4>
 
@@ -174,7 +201,8 @@
     <ul>
        <li>please, use the Lesson 12 <b>examples</b> to build your Web Site</li>
        <li>practice in applying inline and block elements <b>positioning</b></li>
-       <li>repeat on your pages Lesson 12 code examples with desired <b>modifications</b> (display, float, radius, clear and etc).</li>
+       <li>repeat on your pages Lesson 12 code examples with desired 
+        <b>modifications</b> (display, float, radius, clear and etc).</li>
     </ul>
 </body>
 </html>
