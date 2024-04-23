@@ -45,6 +45,10 @@ img.float-left {
     border-radius: 25px;
 }
 
+h3.f-example {
+    clear: left; /* Design collapses without this clearing */
+}
+
 img.float-right {
     float: right;
     margin: 10px;
