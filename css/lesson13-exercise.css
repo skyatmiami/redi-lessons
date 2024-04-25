@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    background: #f3f3f3;
+    padding: 4px;
+}
+
+section > div {
+    width: 25%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 12px;
+}
+
+/* CAT */
+div.plan1 {
+    background-color: aqua;
+}
+
+/* DOG */
+div.plan2 {
+    background-color: bisque;
+}
+
+/* FISH */
+div.plan3 {
+    background-color: lightsteelblue;
+    color: white;
+}
+
+ul.features {
+    list-style-type: none;
+    border: 2px dotted green;
+    padding: 10px;
+    font-style: italic;
+}
+
+p.price {
+    font-weight: bold;
+    color: red;
+}

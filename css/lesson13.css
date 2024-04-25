@@ -108,4 +108,7 @@ nav.align-content-space-around {
 /* IDEAL CENTER */
 nav.center-ideal {
     height: 400px;
+    /* ANSWER */
+    /* align-items: center;
+    justify-content: center; */
 }
