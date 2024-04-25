@@ -12,9 +12,18 @@
 <body>
     <h2>1. Introduction to Flexbox</h2>
 
-    <p>Floats design <b>PROBLEMS</b></p>
+    <p>CSS Flexbox exists to give you the technology to create basic 
+    and ADVANCED website layouts in <b>flexible</b> and <b>responsive</b> 
+    ways. <br> 
+    Flexbox also allows easy <b>RESIZING</b> and <b>REPOSITIONING</b> 
+    of flexible containers.</p>
 
-    <p><b>FLEXIBLE</b> BOXES</p>
+    <p class="marked">What is a common problem with float design 
+    in CSS? <br><br>
+    In case when the floating elements are <b>removed</b> from the normal 
+    web page flow, they may overlap with other elements on the page.
+    This can cause unexpected space and layout issues, which can lead to 
+    web <b>DESIGN BROKENESS</b></p>
 
     <h3>display: flex;</h3>
     <nav>
@@ -27,18 +36,59 @@
         <div>Contact</div>
     </nav>
 
-    <h3>flex-direction: column; (default - row)</h3>
+    <p>Floats design <b>PROBLEMS</b></p>
+
+    <p><b>FLEXIBLE</b> BOXES</p>
+
+    <h2>2. The Flex Model</h2>
+
+    <h2>The flex-direction Property</h2>
+
+    <p>The CSS flex-direction property is used to set the DIRECTION 
+    of the objects in a flex container.</p>
+
+    <h3>A) flex-direction: column; (default - row)</h3>
     <nav class="column">
-        <div>Home</div>
-        <div>About</div>
-        <div>Work</div>
-        <div>Study</div>
-        <div>Hobby</div>
-        <div>Travel</div>
-        <div>Contact</div>
+        <div>1 Home</div>
+        <div>2 About</div>
+        <div>3 Work</div>
+        <div>4 Study</div>
+        <div>5 Hobby</div>
+        <div>6 Travel</div>
+        <div>7 Contact</div>
     </nav>
 
-    <h3>flex-wrap: wrap; (objects will wrap if necessary,
+    <h3>B) flex-direction: column-reverse; (reverse positioning 
+    relative to the standard one, see the previous example.)</h3>
+    <nav class="column-reverse">
+        <div>1 Home</div>
+        <div>2 About</div>
+        <div>3 Work</div>
+        <div>4 Study</div>
+        <div>5 Hobby</div>
+        <div>6 Travel</div>
+        <div>7 Contact</div>
+    </nav>
+
+    <h3>C) flex-direction: row-reverse;</h3>
+    <nav class="row-reverse">
+        <div>1 Home</div>
+        <div>2 About</div>
+        <div>3 Work</div>
+        <div>4 Study</div>
+        <div>5 Hobby</div>
+        <div>6 Travel</div>
+        <div>7 Contact</div>
+    </nav>
+    <br>
+
+    <h2>The flex-wrap Property</h2>
+
+    <p>The CSS flex-wrap property is used to define 
+        whether flex objects are forced into a single line 
+        or wrapped into <b>MULTIPLE</b> lines.</p>
+
+    <h3>D) flex-wrap: wrap; (objects will wrap if necessary,
         default - nowrap)</h3>
     <nav class="wrap">
         <div>Home</div>
@@ -57,10 +107,15 @@
         <div>Travel</div>
         <div>Contact</div>
     </nav>
+    <br>
 
-    <h3>flex-flow: row wrap; (flex-flow is a shorthand 
-    property for setting both the flex-direction and 
-    flex-wrap properties)</h3>
+    <h2>The flex-flow Property</h2>
+
+    <p>CSS flex-flow is a shorthand 
+    property for setting BOTH the flex-direction and 
+    flex-wrap properties.</p>
+
+    <h3>F) flex-flow: row wrap;</h3>
     <nav class="row-wrap">
         <div>TEST TEXT</div>
         <div>TEST TEXT</div>
@@ -77,8 +132,14 @@
         <div>TEST TEXT</div>
         <div>TEST TEXT</div>
     </nav>
+    <br>
 
-    <h3>justify-content: center;</h3>
+    <h2>The justify-content Property</h2>
+
+    <p>The CSS justify-content property sets HOW the 
+        flexible box container is ALIGNED.</p>
+
+    <h3>G) justify-content: center;</h3>
     <nav class="justify-center">
         <div>Home</div>
         <div>About</div>
@@ -89,7 +150,7 @@
         <div>Contact</div>
     </nav>
 
-    <h3>justify-content: flex-end; (default - flex-start)</h3>
+    <h3>H) justify-content: flex-end; (default - flex-start)</h3>
     <nav class="justify-flex-end">
         <div>Home</div>
         <div>About</div>
@@ -100,7 +161,137 @@
         <div>Contact</div>
     </nav>
 
-    <h2>2. The Flex Model</h2>
+    <h3>I) justify-content: space-around; (the spacing between each 
+    pair of adjacent items is the <b>SAME</b>.<br>
+    The empty space before the first and after the last item <b>EQUALS 
+    HALF</b> of the space between each pair of adjacent items)</h3>
+    <nav class="justify-space-around">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
 
+    <h3>J) justify-content: space-between;</h3>
+    <nav class="justify-space-between">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+    <br>
+
+    <h2>The align-items Property</h2>
+
+    <p>The align-items construction determines HOW items are 
+        laid out along the cross axis of the flex container.</p>
+
+    <h3>K) align-items: center; (VERTICAL aligning)</h3>
+    <nav class="align-items-center">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h3>L) align-items: flex-start; (VERTICAL aligning 
+        on the top)</h3>
+    <nav class="align-items-flex-start">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h3>M) align-items: flex-end; (VERTICAL aligning at the bottom)</h3>
+    <nav class="align-items-flex-end">
+        <div>Home</div>
+        <div>About</div>
+        <div>Work</div>
+        <div>Study</div>
+        <div>Hobby</div>
+        <div>Travel</div>
+        <div>Contact</div>
+    </nav>
+
+    <h3>N) align-items: baseline; (default - stretch)</h3>
+    <nav class="align-items-baseline">
+        <div><h2>Home</h2></div>
+        <div><h5>About</h5></div>
+        <div><h1>Work</h1></div>
+        <div><h3>Study</h3></div>
+        <div><h6>Hobby</h6></div>
+        <div>Travel</div>
+        <div><h5>Contact</h5></div>
+    </nav>
+    <br>
+
+    <h2>The align-content Property</h2>
+
+    <p>The align-content property controls
+        distributing AVAILABLE SPACE between grid tracks or flex items.</p>
+
+    <h3>O) align-content: space-between; 
+        (VERTICAL aligning FLEX lines)</h3>
+    <nav class="align-content-space-between">
+        <div><h2>TEST 1</h2></div>
+        <div><h2>TEST 2</h2></div>
+        <div><h2>TEST 3</h2></div>
+        <div><h2>TEST 4</h2></div>
+        <div><h2>TEST 5</h2></div>
+        <div><h2>TEST 6</h2></div>
+        <div><h2>TEST 7</h2></div>
+        <div><h2>TEST 8</h2></div>
+        <div><h2>TEST 9</h2></div>
+        <div><h2>TEST 10</h2></div>
+        <div><h2>TEST 11</h2></div>
+        <div><h2>TEST 12</h2></div>
+    </nav>
+
+    <h3>P) align-content: space-around;</h3>
+    <nav class="align-content-space-around">
+        <div><h2>TEST 1</h2></div>
+        <div><h2>TEST 2</h2></div>
+        <div><h2>TEST 3</h2></div>
+        <div><h2>TEST 4</h2></div>
+        <div><h2>TEST 5</h2></div>
+        <div><h2>TEST 6</h2></div>
+        <div><h2>TEST 7</h2></div>
+        <div><h2>TEST 8</h2></div>
+        <div><h2>TEST 9</h2></div>
+        <div><h2>TEST 10</h2></div>
+        <div><h2>TEST 11</h2></div>
+        <div><h2>TEST 12</h2></div>
+    </nav>
+
+    <h2>Question to students:<h2>
+    <h3>This image (or some other object) should be 
+        equally distant from the borders of the 
+        container. <br>
+        How we can <u>center</u> this object IDEALLY?</h3>
+    <nav class="center-ideal">
+        <img src="img/flower.jpg" width="300" height="200" alt="Flower">
+    </nav>
+
+    <p><i>Hint: horizontal aligning, vertical aligning</i></p>
+    <br>
+
+    <h2>Exercise for students:</h2>
+    <h3>Using lesson 13 functionality, please make CSS file to style 
+    the following <a href="lesson13-exercise.html" title="Lesson 13 exercise" target="_blank">
+    Price Grid</a></h3>
+    <br><br>
 </body>
 </html>

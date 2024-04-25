@@ -1,23 +1,53 @@
+p.marked {
+    background-color: bisque;
+    padding: 15px;
+}
+
+h3 {
+    margin-top: 45px;
+}
+
+div {
+    color: white;
+}
+
+/* 1. INTRODUCTION TO FLEXBOX */
 nav {
     display: flex;
-    background: gray;
+    background: #f3f3f3;
+    padding: 4px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+/* Multiple blocks in nav DEMO sections */
 nav > div {
-    background: lightblue;
-    padding: 7px;
-    margin: 7px;
+    background: #008CBA;
+    padding: 5px;
+    margin: 5px;
     text-align: center;
+    border-radius: 6px;
 }
 
+/* 2. THE FLEX MODEL */
+/* The flex-direction Property */
 nav.column {
     flex-direction: column; /* Default - row */
 }
 
+nav.column-reverse {
+    flex-direction: column-reverse;
+}
+
+nav.row-reverse {
+    flex-direction: row-reverse;
+}
+
+/* The flex-wrap Property */
 nav.wrap {
     flex-wrap: wrap; /* Default - nowrap */
 }
 
+/* The flex-flow Property */
 nav.row-wrap {
     flex-flow: row wrap;
 }
@@ -25,10 +55,57 @@ nav.row-wrap > div {
     height: 60px;
 }
 
+/* The justify-content Property */
 nav.justify-center {
     justify-content: center;
 }
 
 nav.justify-flex-end {
     justify-content: flex-end;
+}
+
+nav.justify-space-around {
+    justify-content: space-around;
+}
+
+nav.justify-space-between {
+    justify-content: space-between;
+}
+
+/* The align-items Property */
+nav.align-items-center {
+    align-items: center;
+    height: 100px;
+}
+
+nav.align-items-flex-start {
+    align-items: flex-start;
+    height: 100px;
+}
+
+nav.align-items-flex-end {
+    align-items: flex-end;
+    height: 100px;
+}
+
+nav.align-items-baseline {
+    align-items: baseline;
+}
+
+/* The align-content Property */
+nav.align-content-space-between {
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 350px;
+}
+
+nav.align-content-space-around {
+    flex-wrap: wrap;
+    align-content: space-around;
+    height: 350px;
+}
+
+/* IDEAL CENTER */
+nav.center-ideal {
+    height: 400px;
 }
