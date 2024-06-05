@@ -1,0 +1,139 @@
+/* 1. RECAP OF THE CSS SELECTORS I */
+/* Element Selector */
+i {
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Id Selector */
+#selector-id {
+    background-color: beige;
+    padding: 12px;
+}
+
+/* Class Selector */
+.selector-class {
+    border: 5px dotted red;
+    padding: 12px;
+}
+
+/* Universal selector */
+/* Selects all elements of the HTML document */
+* {
+    width: 90%;
+}
+
+/* 2. CSS COMBINATOR SELECTORS */
+article {
+    border: 3px solid;
+}
+
+nav {
+    border: 3px solid green;
+}
+
+section {
+    border: 2px dotted;
+}
+
+/* Descendant selector */
+article code {
+    font-size: 1.4rem;
+    background-color: aqua;
+    margin: 1rem;
+}
+
+/* Child selector */
+nav > span {
+    color: blue;
+    font-weight: bold;
+    text-shadow: black;
+}
+
+/* Adjacent sibling selector */
+section + p {
+    background-color: burlywood;
+}
+
+/* General sibling selector */
+footer ~ p {
+    background-color: chocolate;
+}
+
+/* 3. CSS PSEUDO-CLASSES */
+/* :first-child selector */
+a:first-child {
+    background-color: darkorange;
+}
+
+/* :last-child selector */
+h4:last-child {
+    background-color: blue;
+    color: white;
+}
+
+/* :nth-child() selector */
+span p:nth-child(2) {
+    background: yellow;
+    font-style: italic;
+    padding: 0.5rem;
+    margin: 2rem;
+}
+
+/* Selects every THIRD element among any group of siblings */
+/* :nth-child(3) {
+    background: yellow;
+    font-style: italic;
+    padding: 0.2rem;
+    margin: 3rem;
+} */
+
+/* :lang selector */
+/* French (just for example) text selection */
+p:lang(fr) {
+    background: gray;
+    color: aliceblue;
+    padding: 0.5rem;
+}
+
+/* 4. CSS PSEUDO ELEMENTS */
+/* ::first-line selector */
+h5::first-line {
+    background-color: pink;
+}
+
+/* ::first-letter selector */
+h6::first-letter {
+    font-size: 3rem;
+}
+
+/* ::before selector */
+blockquote::before {
+    content: "WARNING! - ";
+}
+
+/* ::after selector */
+cite::after {
+    content: " *** Article created by [NAME]";
+}
+
+/* ::selection selector */
+::selection {
+    color: white;
+    background: blue;
+    text-decoration: underline;
+}
+
+/* 5. CSS ATTRIBUTE SELECTORS */
+/* CSS [attribute] selector */
+p[style] {
+    font-size: 3rem;
+    background-color:black;
+    color: beige;
+}
+
+/* CSS [attribute="value"] selector */
+a[title="food"] {
+    text-shadow: 2px 2px;
+    font-size: 2rem;
+}

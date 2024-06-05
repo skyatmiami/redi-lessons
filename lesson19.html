@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lesson19.css">
+
+    <title>Lesson 19 - CSS Selectors II</title>
+</head>
+<body>
+    <h2>1. Recap of the CSS Selectors I</h2>
+
+    <h3>Element Selector</h3>
+
+    <i>Italic element</i>
+    
+    <h3>Id Selector</h3>
+
+    <div id="selector-id">selector-id DIV block</div>
+    
+    <h3>Class Selector</h3>
+
+    <div class="selector-class">selector-class DIV block</div>
+    
+    <h3>Universal Selector</h3>
+
+    See the styling file
+
+    <h2>2. CSS Combinator Selectors</h2>
+
+    <h3>Descendant selector (space between elements):</h3>
+
+    <article>Article example <br>
+        <p>Paragraph in article.</p>
+
+        <code>Some computer code example: $var = "Test"; break;
+        </code>
+    </article>
+
+    <h3>Child selector ( > - "greater than" symbol):</h3>
+
+    <nav>Navigation example <br><br>
+        
+        <span>Span in navigation block <br>
+
+            <div>Div block in span</div> <br>
+        </span>
+
+        <div>Div block not in span example</div>
+    </nav>
+
+    <h3>Adjacent sibling selector ( + "plus" symbol):</h3>
+
+    <section>
+        <p>Paragraph 1 in section</p>
+        <p>Paragraph 2 in section</p>
+        <p>Paragraph 3 in section</p>
+    </section>
+
+    <p>Paragraph 1 AFTER section</p>
+    <p>Paragraph 2 AFTER section</p>
+    <p>Paragraph 3 AFTER section</p>
+
+    <h3>General sibling selector ( ~ "tilde" symbol):</h3>
+
+    <footer>
+        <p>Paragraph 1 in footer</p>
+        <p>Paragraph 2 in footer</p>
+        <p>Paragraph 3 in footer</p>
+    </footer>
+
+    <p>Paragraph 4 AFTER footer - sibling 1</p>
+    <span>Span 1 AFTER footer</span>
+    <p>Paragraph 5 AFTER footer - sibling 2</p>
+    <a href="">Link 1 AFTER footer</a> <br>
+    <a href="">Link 2 AFTER footer</a>
+    <p>Paragraph 6 AFTER footer</p>
+    <p>Paragraph 7 AFTER footer</p>
+    <p>Paragraph 8 AFTER footer</p>
+
+    <h2>3. CSS Pseudo-classes</h2>
+
+    <h3>:first-child</h3>
+
+    - Attention. Construction where links displayed as a 
+    child elements of <b> &lt;li&gt; </b> items:
+    <ol>
+        <li><a href="">Link 1 - first child in ordered list</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">Link 3</a></li>
+    </ol> <br>
+
+    - Working example (no <b> &lt;li&gt;</b>): <br>
+    <ul>
+        <a href="">Link 1 - first child in unordered list</a> <br>
+        <a href="">Link 2</a> <br>
+        <a href="">Link 3</a>
+    </ul> <br>
+
+    <div>
+        <a href="">Link 1 - first child in DIV</a> <br>
+        <a href="">Link 2</a> <br>
+        <a href="">Link 3</a>
+    </div>
+
+    <h3>:last-child</h3>
+
+    - Attention. Construction where headers displayed as a 
+    child elements of <b> &lt;li&gt; </b> items:
+    <ol>
+        <li><h4>(4)Header 1</h4></li>
+        <li><h4>(4)Header 2</h4></li>
+        <li><h4>(4)Header 3 - last child in ordered list</h4></li>
+    </ol> <br>
+
+    - Working example (no <b> &lt;li&gt;</b>): <br>
+    <ul>
+        <h4>(4)Header 1</h4>
+        <h4>(4)Header 2</h4>
+        <h4>(4)Header 3 - last child in unordered list</h4>
+    </ul> <br>
+
+    <div>
+        <h4>(4)Header 1</h4>
+        <h4>(4)Header 2</h4>
+        <h4>(4)Header 3 - last child in DIV block</h4>
+    </div>
+
+    <h3>:nth-child()</h3>
+
+    <h3>Example 1</h3>
+    nth-child(2) CSS construction selects second P element in SPAN:
+
+    <span>
+        <p>First bold string</p>
+        <p>Second bold string</p>
+        <p>Third bold string</p>
+    </span>
+
+    <h3>Example 2</h3>
+    Please uncomment in lesson19.css file to see the common result 
+    concerning ALL DOCUMENT
+
+    <h3>:lang(languagecode)</h3>
+
+    Interesting example of using CSS Pseudo Elements functionality - 
+    language selection:
+        
+    <p lang="fr">Bonjour!</p>
+
+    <h2>4. CSS Pseudo Elements</h2>
+
+    <h3>::first-line</h3>
+
+    <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Adipisci amet illo rem explicabo obcaecati eligendi 
+        molestiae alias id, quam neque, quas magni. Minus 
+        laboriosam cum odit illum placeat, quasi tempora!
+    </h5>
+
+    <h3>::first-letter</h3>
+
+    <h6>h6 element 1</h6>
+    <h6>h6 element 2</h6>
+    <h6>h6 element 3</h6>
+
+    <h3>::before</h3>
+
+    <blockquote>Our rules</blockquote>
+    <blockquote>Restricted area</blockquote>
+
+    <h3>::after</h3>
+
+    <cite>Some data about nature</cite> <br>
+    <cite>Science in our life</cite>
+
+    <h3>::selection</h3>
+
+    Please select some text in this HTML document
+
+    <h2>5. CSS Attribute Selectors</h2>
+
+    <h3>CSS [attribute] Selector</h3>
+
+    <p style="font-family: 'Times New Roman', Times, serif;">This is a styled paragraph</p>
+
+    <h3>CSS [attribute="value"] Selector</h3>
+
+    <a href="" title="food">Very tasty fresh vegetables Link</a>
+
+    <h2>Exercise for students: go to this <a href="lesson19-exercise.html" target="_blank" title="Exercise">web
+    form</a> and style it (35 min.)</h2>
+</body>
+</html>

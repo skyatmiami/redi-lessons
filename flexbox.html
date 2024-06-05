@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  align-items: stretch;
+  background-color: lightgreen;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.flex-container > div {
+  background-color: lightgray;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.flex-container2 {
+  display: flex;
+  height: 200px;
+  background-color: #f1f1f1;
+}
+
+.flex-container2 > div {
+  background-color: lightskyblue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+img {
+  max-height: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 7px;
+}
+</style>
+</head>
+<body>
+
+<h1>The order Property</h1>
+
+<h2>order</h2>
+
+<div class="flex-container">
+  <div style="order: 2"><img src="img/flower-small.jpg">2</div>
+  <div style="order: 3"><img src="img/flower-small.jpg">3</div>
+  <div style="order: 1"><img src="img/flower-small.jpg">1</div> 
+  <div style="order: 4"><img src="img/flower-small.jpg">4</div>
+</div>
+
+<h2>flex-grow</h2>
+
+<div class="flex-container">
+    <div style="flex-grow: 1"><img src="img/flower-small.jpg">1</div>
+    <div style="flex-grow: 2"><img src="img/flower-small.jpg">2</div>
+    <div style="flex-grow: 1"><img src="img/flower-small.jpg">1</div>
+    <div style="flex-grow: 4"><img src="img/flower-small.jpg">4</div>
+  </div>
+
+<h2>flex-shrink</h2>
+
+  <div class="flex-container">
+    <div><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div style="flex-shrink: 0"><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg" alt="Flower"></div>
+    <div style="flex-shrink: 1"><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div style="flex-shrink: 2"><img src="img/flower-small.jpg"></div>
+    <div style="flex-shrink: 3"><img src="img/flower-small.jpg"></div>
+    <div style="flex-shrink: 4"><img src="img/flower-small.jpg"></div>
+  </div>
+
+<h2>flex-basis</h2>
+
+  <div class="flex-container">
+    <div><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div style="flex-basis: 250px"><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+  </div>
+
+<h2>flex</h2>
+
+  <div class="flex-container">
+    <div><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div style="flex: 0 0 150px"><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+  </div>
+
+<h2>align-self</h2>
+
+  <div class="flex-container2">
+    <div><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div style="align-self: center"><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div style="align-self: flex-start"><img src="img/flower-small.jpg"></div>
+    <div><img src="img/flower-small.jpg"></div>
+    <div style="align-self: flex-end"><img src="img/flower-small.jpg"></div>
+  </div>
+</body>
+</html>
