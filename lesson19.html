@@ -12,46 +12,65 @@
 <body>
     <h2>1. Recap of the CSS Selectors I</h2>
 
+    <p>In previous lessons we used many different CSS selectors.
+    Let's highlight some models for the design and layout of our websites
+    </p>
+
     <h3>Element Selector</h3>
+
+    <p>Here we list the names of the HTML elements to set the CSS rules:</p>
 
     <i>Italic element</i>
     
     <h3>Id Selector</h3>
 
+    <p>Used to identify object with # (hash) symbol</p>
+
     <div id="selector-id">selector-id DIV block</div>
     
     <h3>Class Selector</h3>
+
+    <p>Sets styles for chosen class names</p>
 
     <div class="selector-class">selector-class DIV block</div>
     
     <h3>Universal Selector</h3>
 
-    See the styling file
+    See the styling file section with * (asterisk sign) including
 
     <h2>2. CSS Combinator Selectors</h2>
 
+    <p>This is the situation when we need to combine some styles to set special rules of behavior to them</p>
+
     <h3>Descendant selector (space between elements):</h3>
+
+    <p>In this case CSS properties applied on all direct 
+    or nested 'some element name' elements:</p>
 
     <article>Article example <br>
         <p>Paragraph in article.</p>
 
-        <code>Some computer code example: $var = "Test"; break;
-        </code>
+        <code>Some computer code example: $var = "Test"; break;</code>
     </article>
 
     <h3>Child selector ( > - "greater than" symbol):</h3>
 
+    <p>Selects all elements that are the CHILDREN of a CHOSEN element:</p>
+
     <nav>Navigation example <br><br>
         
-        <span>Span in navigation block <br>
+        <span>Span in navigation block - child<br>
 
-            <div>Div block in span</div> <br>
+            <div>Div block in span - child </div> <br>
         </span>
-
-        <div>Div block not in span example</div>
+        <!-- not CHILD but DESCENDANT -->
+        <div>Div block not in span example - <b> not CHILD but DESCENDANT!</b></div>
     </nav>
 
     <h3>Adjacent sibling selector ( + "plus" symbol):</h3>
+
+    <p>Selects the first <b>p</b> element that placed immediately
+    after <b>section</b>:</p>
 
     <section>
         <p>Paragraph 1 in section</p>
@@ -65,22 +84,32 @@
 
     <h3>General sibling selector ( ~ "tilde" symbol):</h3>
 
-    <footer>
-        <p>Paragraph 1 in footer</p>
-        <p>Paragraph 2 in footer</p>
-        <p>Paragraph 3 in footer</p>
-    </footer>
+    <p>Selects all <b>p</b> elements that are next siblings of 
+    <b>div</b> elements.</p>
+    
+    <p>In this example would be selected all paragraphs in a DIV
+    that come after the featured FOOTER and styling them:</p>
 
-    <p>Paragraph 4 AFTER footer - sibling 1</p>
-    <span>Span 1 AFTER footer</span>
-    <p>Paragraph 5 AFTER footer - sibling 2</p>
-    <a href="">Link 1 AFTER footer</a> <br>
-    <a href="">Link 2 AFTER footer</a>
-    <p>Paragraph 6 AFTER footer</p>
-    <p>Paragraph 7 AFTER footer</p>
-    <p>Paragraph 8 AFTER footer</p>
+    <div>
+        <footer>
+            <p>Paragraph 1 in footer</p>
+            <p>Paragraph 2 in footer</p>
+            <p>Paragraph 3 in footer</p>
+        </footer>
+
+        <p>Paragraph 4 AFTER footer - sibling 1</p>
+        <span>Span 1 AFTER footer</span>
+        <p>Paragraph 5 AFTER footer - sibling 2</p>
+        <a href="">Link 1 AFTER footer</a> <br>
+        <a href="">Link 2 AFTER footer</a>
+        <p>Paragraph 6 AFTER footer - sibling 3</p>
+        <p>Paragraph 7 AFTER footer - sibling 4</p>
+    </div>
 
     <h2>3. CSS Pseudo-classes</h2>
+
+    <p>A CSS pseudo-class is a SPECIAL WORD <br>
+    added to a selector that specifies some state of the elements</p>
 
     <h3>:first-child</h3>
 
@@ -152,6 +181,9 @@
 
     <h2>4. CSS Pseudo Elements</h2>
 
+    <p>A CSS pseudo-class is a SPECIAL WORD <br>
+        added to a selector that specifies some special PART of the elements</p>
+
     <h3>::first-line</h3>
 
     <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -182,15 +214,30 @@
 
     <h2>5. CSS Attribute Selectors</h2>
 
+    <p>Finds elements based on the element with a GIVEN ATTRIBUTE SET. <br>
+    Also there are options for defining some ATTRIBUTE VALUES</p>
+
     <h3>CSS [attribute] Selector</h3>
 
-    <p style="font-family: 'Times New Roman', Times, serif;">This is a styled paragraph</p>
+    <p style="font-family: 'Times New Roman';">This is a styled paragraph</p>
 
     <h3>CSS [attribute="value"] Selector</h3>
 
     <a href="" title="food">Very tasty fresh vegetables Link</a>
 
-    <h2>Exercise for students: go to this <a href="lesson19-exercise.html" target="_blank" title="Exercise">web
-    form</a> and style it (35 min.)</h2>
+    <h2>Exercise for students: <br>
+        go to this <a href="lesson19-exercise.html" target="_blank" title="Exercise">web
+        form</a> and style it.<br>
+    </h2>
+        Please use:
+    
+        <ul>
+            <li>universal selector</li>
+            <li>element selector</li>
+            <li>class selector</li>
+            <li>id selector</li>
+            <li>[attribute="value"] selector</li>
+            <li>and other combinations</li>
+        </ul>
 </body>
 </html>

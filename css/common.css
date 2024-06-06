@@ -7,6 +7,14 @@ body {
     font-family: Open Sans;
 }
 
+h2 {
+    margin-top: 3rem;
+}
+
+h3 {
+    margin-top: 2rem;
+}
+
 span.text-marked {
     padding: 3px 6px;
     background: blueviolet;

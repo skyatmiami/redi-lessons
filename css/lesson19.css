@@ -2,7 +2,7 @@
 /* Element Selector */
 i {
     font-size: 2rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia;
 }
 
 /* Id Selector */
@@ -14,7 +14,7 @@ i {
 /* Class Selector */
 .selector-class {
     border: 5px dotted red;
-    padding: 12px;
+    padding: 30px;
 }
 
 /* Universal selector */
@@ -37,6 +37,8 @@ section {
 }
 
 /* Descendant selector */
+/* CSS properties applied on all direct 
+or nested 'code' elements: */
 article code {
     font-size: 1.4rem;
     background-color: aqua;
@@ -47,15 +49,17 @@ article code {
 nav > span {
     color: blue;
     font-weight: bold;
-    text-shadow: black;
+    text-shadow: 3px 3px 3px;
 }
 
 /* Adjacent sibling selector */
+/* Selects the first <p> element that placed immediately after <section>: */
 section + p {
     background-color: burlywood;
 }
 
 /* General sibling selector */
+/* Selects all <p> elements that are next SIBLINGS of <footer> element: */
 footer ~ p {
     background-color: chocolate;
 }

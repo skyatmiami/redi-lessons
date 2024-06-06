@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/common.css">
     <link rel="stylesheet" href="css/lesson19-exercise.css">
 
     <title>Lesson 19 - CSS Selectors II - Exercise</title>
@@ -12,11 +11,12 @@
 <body>
     <form>
         <ul class="form-exercise">
-            <li><label>Full Name <span class="required">*</span></label>
+            <li>
+                <label>Full Name <span id="required">*</span></label>
                 <input type="text" name="field1" class="field-divided" placeholder="First" />
                 <input type="text" name="field2" class="field-divided" placeholder="Last" /></li>
             <li>
-                <label>Email address <span class="required">*</span></label>
+                <label>Email address <span id="required">*</span></label>
                 <input type="email" name="field3" class="field-long" />
             </li>
             <li>
@@ -30,12 +30,10 @@
                 </select>
             </li>
             <li>
-                <label>Please write message text <span class="required">*</span></label>
+                <label>Please write message text <span id="required">*</span></label>
                 <textarea name="field5" id="field5" class="field-long field-textarea"></textarea>
             </li>
-            <li>
-                <input type="submit" value="Save and send" />
-            </li>
+            <li><input type="submit" value="Save and send" /></li>
         </ul>
     </form>
 </body>
