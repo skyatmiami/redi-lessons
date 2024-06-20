@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/lesson24.css">
+
+    <title>Lesson 24 - Web Accessibility</title>
+</head>
+<body>
+    <h2>1. What is Accessibility?</h2>
+
+    <p>Accessibility is the design (or CONSTRUCTION) of 
+        <ul>
+            <li>products</li>
+            <li>devices</li>
+            <li>services</li>
+            <li>vehicles</li>
+            <li>environments</li> 
+        </ul>
+        so as to be usable by people <b>WITH DISABILITIES</b>.
+    </p>
+
+    <p>Accessibility is not to be confused with usability, which is the 
+    extent to which a product (such as a device, service, or environment) 
+    can be used by <b>SPECIFIED USERS</b> to achieve <b>SPECIFIED GOALS</b> <br>
+    with 
+    <ul>
+        <li>effectiveness</li>
+        <li>efficiency</li>
+        <li>and satisfaction</li>
+    </ul> in a SPECIFIED context of use.</p>
+
+    <p>Accessibility modifications may be required to enable persons with 
+    disabilities to gain access to 
+    <ul>
+        <li>education</li>
+        <li>employment</li>
+        <li>transportation</li>
+        <li>housing</li>
+        <li>recreation</li>
+    </ul>
+    or even simply to exercise their right to vote.</p>
+
+    <p><b>WEB ACCESSIBILITY</b> is the inclusive practice of ensuring there 
+    are no barriers that prevent interaction with, or access to, <b>websites</b>
+    on the World Wide Web by people with 
+    <ul>
+        <li>physical disabilities</li>
+        <li>situational disabilities</li>
+        <li>and socio-economic restrictions on bandwidth and speed.</li></ul>
+    </p>
+
+    <h2>2. Most common impairments classification</h2>
+
+    <ul>
+        <li>hearing (for example, inability to listen to sound notifications)</li>
+        <li>cognitive (some problems concerning memory, attention, logic skills, etc)</li>
+        <li>visual (difficulty recognizing text and graphics)</li>
+        <li>mobility (complexity with body using)</li>
+    </ul>
+
+    <h2>3. Web Content Accessibility Guidelines (WCAG)</h2>
+
+    <p>They are a set of recommendations for making Web content more 
+    <b>ACCESSIBLE</b>, primarily for people with disabilities - but also 
+    for <b>ALL USER AGENTS</b>, including highly limited devices, such as 
+    mobile phones.</p>
+    
+    <p>Following these guidelines will also often make Web content more 
+    <b>USABLE TO USERS</b> in general.</p>
+
+    <p>Latest published version:
+    <a href="https://www.w3.org/TR/WCAG21/">https://www.w3.org/TR/WCAG21/</a>
+    </p>
+
+    <h2>*** Commonly used methods and techniques for following (WCAG)
+        recommendations:</h2>
+
+    <h3>Use unique and detailed page titles</h3>
+
+    &lt;title&gt;Page 12&lt;/title&gt; - bad example <br>
+    &lt;title&gt;Only general website name&lt;/title&gt; - bad example <br><br>
+    
+    <span class="text-marked">&lt;title&gt;Art gallery - Nature - Flowers category&lt;/title&gt; - good example</span>
+
+    <h3>Provide headers and subheaders to make your information more structured and organized</h3>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, 
+        numquam sunt sed quisquam, recusandae dignissimos libero harum 
+        quia repellendus deleniti accusamus nulla ipsam doloribus officia 
+        qui maiores voluptatem ducimus! Consequatur. - bad example</p>
+
+    <p><h2>Header 1</h2>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+        <h3>Header 2</h3>
+        Quo illum, possimus doloribus quas explicabo harum non laboriosam 
+        rem ut amet provident, ea dicta delectus id dolorum labore 
+        dolores beatae. Doloribus?
+        <h4>Header 3</h4>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Iusto exercitationem, quo assumenda aliquam numquam quisquam? 
+        Asperiores, nisi officiis repudiandae unde ullam nulla quo 
+        recusandae aspernatur modi saepe, voluptates, at delectus. - <span class="text-marked">good example</span></p>
+
+    <h3>Choose informative links text</h3>
+
+    To read more information <a href="">go here</a> - bad example <br>
+    <a href="">second section</a> - bad example <br> <br>
+
+    <span class="text-marked">To read more information visit 
+    our <a href="" class="color">products database</a> - good example</span>
+
+    <h3>Write good text alternatives using images in your design</h3>
+
+    &lt;img src="image.jpg" alt="image"> - bad example <br>
+    &lt;img src="image.jpg" alt="from gallery"> - bad example <br> <br>
+
+    <span class="text-marked">
+        &lt;img src="image.jpg" alt="Gallery - Animal - Brown Wolf"> - good example
+    </span>
+
+    <h3>Make enough color contrast between background and foreground</h3>
+
+    <div class="colorless">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam maxime 
+    excepturi quod, eligendi cumque nostrum doloribus eveniet nesciunt 
+    doloremque vero, ipsum iusto fugiat enim natus quis illum? Commodi, 
+    distinctio veritatis! - bad example</div>
+
+    <div class="colorful">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores 
+    veritatis molestias corrupti nisi iusto sit quis perspiciatis excepturi, 
+    explicabo quod deleniti mollitia ea perferendis ut rem consectetur 
+    voluptatem quas? Delectus. - good example</div>
+
+    <h3>Use color and numbers/symbols to show good and informative explanations
+    </h3>
+    
+    <h4>Bad example:</h4>
+    <div class="yellow"></div>
+    <div class="green"></div>
+    <div class="blue"></div>
+
+    <h4>Good example:</h4>
+    <div class="yellow">Apples - Section 2023</div>
+    <div class="green">Grapes - Section 2024</div>
+    <div class="blue">Plums - Section 2024/a</div>
+
+    <h3>Ensure that all form elements has useful labels</h3>
+
+    <form action="">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="text" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br> <br>
+        <textarea id="info" name="fav_language" value="info"></textarea>
+        <label for="info">info</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h3>Develop web page design for different vieport values</h3>
+
+    <p>Consider how page information is presented in different sized 
+    viewports, such as mobile phones or zoomed browser windows. 
+    Position and presentation of main elements, such as header and 
+    navigation can be changed to make best use of the space. 
+    Ensure that text size and line width are set to maximize readability 
+    and legibility.</p>
+
+    <h3>Include media alternatives/replacements:
+        <ul>
+            <li>audio - &lt;audio controls>
+                            &lt;source src="audio.ogg" type="audio/ogg">
+                        &lt;/audio></li>
+            <li>video - &lt;video width="640" height="480" controls>
+                            &lt;source src="video.mp4" type="video/mp4">
+                        &lt;/video></li>
+            <li>images</li>
+            <li>icons</li>
+            <li>tables - &lt;table>&lt;tr>&lt;td>Data first&lt;/td>&lt;td>Data second&lt;/td>&lt;/tr>&lt;/table></li>
+            <li>graphs</li>
+        </ul>
+    <h3>Always set page language</h3>
+
+    &lt;html lang="en"> <br>
+
+    <p>Use language tags from the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">IANA Language Subtag Registry</a></p>
+
+    <h3>Help site visitors avoid and fix mistakes</h3>
+
+    <p>Provide clear instructions, error messages, and notifications to help users complete forms on your site. When an error occurs:
+
+        <ul>
+            <li>Help users find where the problem is</li>
+            <li>Provide specific, understandable explanations</li>
+            <li>Suggest corrections</li>
+        </ul>
+    </p>
+
+    <p>Example:</p>
+
+    <form action="">
+        <input type="text" id="phone" name="mobile" value="">
+        <label for="phone">Mobile number (format: +49 123 456-789-00)</label><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>4.1 Web Accessibility Initiative (WAI)</h2>
+
+    <p>Learn to use the accessibility semantics defined by the Accessible Rich Internet Application (ARIA) specification to create accessible web experiences. This guide describes how to apply accessibility semantics to common design patterns and widgets.</p>
+
+    <ul>
+        <li><a href="https://www.w3.org/WAI/roles/writers/">recommendations for writers</a></li>
+        <li><a href="https://www.w3.org/WAI/roles/designers/">tips for designers</a></li>
+        <li><a href="https://www.w3.org/WAI/roles/developers/">rules for developers</a></li>
+    </ul>
+
+    <h2>4.2 Accessible Rich Internet Applications (ARIA)</h2>
+
+    <p><a href="https://www.w3.org/WAI/ARIA/apg/">ARIA Authoring Practices Guide (APG)</a>
+    </p>
+
+    <ul>
+        <li>roles</li>
+        <li>properties</li>
+        <li>and states</li>
+    </ul>
+
+    <p>Roles to describe the type of widget presented, such as “menu”, “treeitem”, “slider”, and “progressbar”</p>
+    <p>Roles to describe the structure of the Web page, such as headings, and regions</p>
+    <p>Properties to describe the state widgets are in, such as “checked” for a check box, or “readonly” for most form controls</p>
+    <p>Properties to define live regions of a page that are likely to get updates (such as stock quotes)</p>
+
+    <h2>5. Web Accessibility Check</h2>
+
+    <h3>Using Google Chrome Developer Tools - Lighthouse</h3>
+
+    <h2>6. Exercise for students</h2>
+
+    <h3>Please style this <a href="lesson24-exercise.html">set of icons</a> using pure CSS</h3>
+
+    <h4>Hints:</h4>
+
+    <ul>
+        <li>position</li>
+        <li>display</li>
+    </ul>
+</body>
+</html>
