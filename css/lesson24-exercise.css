@@ -1,0 +1,41 @@
+.icon {
+    margin: 2rem; 
+    width: 6rem; 
+    height: 7rem; 
+    background: #F3F9F7; 
+    position: relative; 
+    border: 1px solid #E6E4E6; 
+    border-radius: 0.5rem;
+}
+
+.corner {
+    display: block;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 0;
+    height: 0; 
+    border-left: 1rem solid #eeeeee; 
+    border-top: 1rem solid #ffffff; 
+}
+
+.type { 
+    position: absolute;
+    padding: 0.3rem;
+    bottom: 0.8rem;
+    left: -0.2rem;
+    color: white;
+    border-radius: 0.1rem;
+}
+
+.img { 
+    background-color: purple; 
+}
+
+.doc { 
+    background-color: darkorange; 
+}
+
+.pdf { 
+    background-color: brown;
+}
